@@ -7,7 +7,8 @@ sudo chkconfig mysqld on
 
 sudo touch /var/www/secrets/conf.php
 sudo chown ec2-user:apache /var/www/secrets/conf.php
-cp ${workingdir}/conf.php /var/www/secrets/conf.php
+sudo chmod 660 /var/www/secrets/conf.php
+cat ${workingdir}/conf.php > /var/www/secrets/conf.php
 
 sudo sed -i "s/https:\/\/hostsecondtop.com/https:\/\/${suffix}/g" /var/www/secrets/conf.php
 
