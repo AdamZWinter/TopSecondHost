@@ -7,22 +7,30 @@
 
 source configure.sh
 
+cd $workingdir
 source dependencies.sh
 
+cd $workingdir
 source apache.sh
 
+cd $workingdir
 source httpdconf.sh
 
+cd $workingdir
 source mysql.sh
 
 php createtables.php
 
+cd $workingdir
 source phpMyAdmin.sh
 
+cd $workingdir
 source virtualhost.sh
 
+cd $workingdir
 source certbot.sh
 
+cd $workingdir
 source composer.sh
 
 #/var/www/secrets/conf.php may still need some configuring
