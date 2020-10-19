@@ -3,6 +3,9 @@
 	#for wordpress graphics processing only
 	#sudo yum install php70-gd
 
+sudo mkdir /var/www/revision
+sudo mkdir /var/www/secrets
+
 sudo chown ec2-user /etc/my.cnf
 echo '
 #The following was added to keep MySQL running with enough memory for innodb:
@@ -21,12 +24,15 @@ chkconfig --list httpd
 chkconfig --list mysqld
 
 sudo usermod -a -G apache ec2-user
+sudo chown -R ec2-user:apache /var/www
 sudo chmod 2775 /var/www
 find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 
 sudo yum install -y mod24_ssl
 
+sudo touch /var/www/html/phpinfo.php
+sudo chown ec2-user:apache /var/www/html/phpinfo.php
 echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
 
 echo 'Check your Apache installation at your public IP address, also with /phpinfo.php'
@@ -35,6 +41,8 @@ read  -n 1 -p "Is everything good there / Continue? ( press: y or n ):" inputnex
 if [ "$inputnext" = "y" ]; then
         echo Continuing
 else
+	echo 'Once you have figured out what went wrong, you can pick up where you left off by running each of .sh files in the order shown in install.sh after you source configure.sh'
         exit
 fi
 
+rm /var/www/html/phpinfo.php

@@ -45,7 +45,6 @@ echo '#This was added to work with the small amount of RAM this system has and k
 sudo sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 999M/g' /etc/php.ini
 
 sudo chown root /etc/httpd/conf/httpd.conf
-mkdir /var/www/revision
 
 sudo service httpd restart
 
