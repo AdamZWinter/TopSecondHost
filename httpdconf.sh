@@ -2,6 +2,8 @@
 
 sudo chown ec2-user /etc/httpd/conf/httpd.conf
 
+sudo sed -i "s/#ServerName www.example.com:80/ServerName $suffix:443/g" /etc/httpd/conf/httpd.conf
+
 sudo sed -i 's/ErrorLog "logs/error_log"/ErrorLog "/var/www/httpd_error.log"/g' /etc/httpd/conf/httpd.conf
 
 sudo sed -i 's/Options Indexes FollowSymLinks/Options FollowSymLinks/g' /etc/httpd/conf/httpd.conf
