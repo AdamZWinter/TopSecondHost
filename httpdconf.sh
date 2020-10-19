@@ -1,7 +1,6 @@
 #!/bin/bash
 
 sudo chown ec2-user /etc/httpd/conf/httpd.conf
-sudo sed -i "s/#ServerName www.example.com:80/ServerName $suffix:443/g" ~/input.txt
 
 sudo sed -i 's/ErrorLog "logs/error_log"/ErrorLog "/var/www/httpd_error.log"/g' /etc/httpd/conf/httpd.conf
 
