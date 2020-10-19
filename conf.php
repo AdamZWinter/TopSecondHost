@@ -3,11 +3,11 @@
 //Put here whatever will resolve to your webroot (ex.  https://example.com OR http://www.example.com)
 //do not include the trailing slash
 //Some parts of this site, like email verification, will link to https://example.com
-$webRoot = 'https://hostsecondtop.com';
+$webRoot = 'https://topsecondhost.com';
 
 //For Database
-$database='secondtopdb'; 
-$dbuser='secondtopdbuser'; 
+$database='topseconddb'; 
+$dbuser='topseconddbuser'; 
 $userpw='replacethisuniquestringuserpw'; 
 
  
@@ -24,7 +24,7 @@ $debugging = FALSE;
 
 //Sitename: for display purposes.
 //This is used in Title and upper left home button of the header 
-$sitename='HostSecondTop.com'; 
+$sitename='TopSecondHost.com'; 
 
 //This is a generic multi-purpose hash of a password of your choosing
 //Use this as a second factor authentication for miscellaneous functions like utilities
@@ -42,7 +42,7 @@ $passwordSmtp = 'getthisfromAWS';
 
 // Replace sender@example.com with your NoReply "From" address.
 // This address must be verified with Amazon SES.
-$noreply = 'noreply@hostsecondtop.com';
+$noreply = 'noreply@topsecondhost.com';
 $noreplyName = 'No Reply';
 
 // If you're using Amazon SES in a region other than US West (Oregon),
@@ -63,7 +63,7 @@ $port = 587;
  //Google API 
 $client_id='clietid'; 
 $client_secret='apikey'; 
-$redirect_uri='https://hostsecondtop.com/example/redirect.php'; 
+$redirect_uri='https://topsecondhost.com/example/redirect.php'; 
 
 
  //Paypal: 

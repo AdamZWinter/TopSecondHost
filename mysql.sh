@@ -10,11 +10,11 @@ sudo chown ec2-user:apache /var/www/secrets/conf.php
 sudo chmod 660 /var/www/secrets/conf.php
 cat ${workingdir}/conf.php > /var/www/secrets/conf.php
 
-sudo sed -i "s/https:\/\/hostsecondtop.com/https:\/\/${suffix}/g" /var/www/secrets/conf.php
+sudo sed -i "s/https:\/\/topsecondhost.com/https:\/\/${suffix}/g" /var/www/secrets/conf.php
 
-sudo sed -i "s/secondtopdb/${database}/g" /var/www/secrets/conf.php
+sudo sed -i "s/topsecondhostdb/${database}/g" /var/www/secrets/conf.php
 
-sudo sed -i "s/secondtopdbuser/${dbuser}/g" /var/www/secrets/conf.php
+sudo sed -i "s/topsecondhostdbuser/${dbuser}/g" /var/www/secrets/conf.php
 
 sudo sed -i "s/replacethisuniquestringuserpw/${dbpw}/g" /var/www/secrets/conf.php
 
