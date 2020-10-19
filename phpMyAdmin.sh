@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-cd /var/wwww/html
+cd /var/www/html
 
 wget https://files.phpmyadmin.net/phpMyAdmin/4.9.5/phpMyAdmin-4.9.5-english.tar.gz
 sleep 1
