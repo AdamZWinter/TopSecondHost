@@ -46,9 +46,7 @@ $session = $_SESSION['sessionID'];
      $obj->dateread = date("D M j G:i:s T Y");
      $obj->message = 'Msg: ';
      $obj->error = 'none';
-     $obj->code = bin2hex(random_bytes(16));   //initialized
      $obj->displayname = 'initialized';
-     $obj->session = $session;
 
  $db = new mysqli('localhost', $dbuser, $userpw, $database);
  if (mysqli_connect_errno()) {
