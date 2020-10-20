@@ -7,7 +7,7 @@ $webRoot = 'https://topsecondhost.com';
 
 //For Database
 $database='topsecondhostdb'; 
-$dbuser='topsecondhostdbuser'; 
+$dbuser='topsecondhostuser'; 
 $userpw='replacethisuniquestringuserpw'; 
 
  

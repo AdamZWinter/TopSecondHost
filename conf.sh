@@ -13,7 +13,7 @@ sudo sed -i "s/https:\/\/topsecondhost.com/https:\/\/${suffix}/g" /var/www/secre
 
 sudo sed -i "s/topsecondhostdb/${database}/g" /var/www/secrets/conf.php
 
-sudo sed -i "s/topsecondhostdbuser/${dbuser}/g" /var/www/secrets/conf.php
+sudo sed -i "s/topsecondhostuser/${dbuser}/g" /var/www/secrets/conf.php
 
 sudo sed -i "s/replacethisuniquestringuserpw/${dbpw}/g" /var/www/secrets/conf.php
 
