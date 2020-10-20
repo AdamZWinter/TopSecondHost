@@ -17,5 +17,5 @@ echo "
 </VirtualHost>
 " >> /etc/httpd/conf.d/${suffix}.conf 
 
+sudo service httpd restart
 
-exit
