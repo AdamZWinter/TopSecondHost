@@ -7,5 +7,8 @@ Disallow: /*pal$
 Disallow: /*est$
 Disallow: /*min$
 Disallow: /*ies$
+Disallow: /*lib$
+Disallow: /*ers$
+Disallow: /*ard$
 
 Sitemap: https://sitename.com/sitemap.xml

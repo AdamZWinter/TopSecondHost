@@ -129,7 +129,7 @@ function writeDoc() {
 
 
 <?php
-require('/var/www/html/dashboard/footer.php');
+require('/var/www/html/footer.php');
 ?>
 
 

@@ -76,5 +76,5 @@ if(!Privileges::granted($email, 'utilities')){echo 'You are not authorized to do
         }
     echo '</tbody></table>';
 
-require('/var/www/html/dashboard/footer.php');
+require('/var/www/html/footer.php');
 ?>

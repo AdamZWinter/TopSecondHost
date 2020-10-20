@@ -31,7 +31,7 @@ if(!Privileges::granted($email, 'utilities')){$obj->error = 'You are not authori
 
 
 <?php
-require('/var/www/html/dashboard/footer.php');
+require('/var/www/html/footer.php');
 ?>
 
 

@@ -1,5 +1,5 @@
  <?php
-//dashboard/header.php
+//authorizedHeader.php  header for pages inside dashboard and utilities
 session_start();
 if(!isset($_SESSION['sessionID'])) 
     { 
