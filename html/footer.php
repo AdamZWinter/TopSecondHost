@@ -32,7 +32,7 @@
 
 <?php
 if($debugging){
-echo json_encode($obj);
+error_log(json_encode($obj));
 }
 ?>
 

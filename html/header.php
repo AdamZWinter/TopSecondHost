@@ -41,7 +41,6 @@ $session = $_SESSION['sessionID'];
 }
 
  $obj = new stdClass();
-     $obj->notice = 'This is not an error, we just have debugging enabled right now.  ';
      $obj->datetime = $datetime;
      $obj->dateread = date("D M j G:i:s T Y");
      $obj->message = 'Msg: ';
