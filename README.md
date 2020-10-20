@@ -11,7 +11,7 @@ After you have a working SES noreply address, the basic site that is installed i
 
 3)  SSH into your new instance, and run the following:
 
-$ sudo yum install git-all
+$ sudo yum install git-all -y
 
 $ git clone https://github.com/AdamZWinter/TopSecondHost.git
 
