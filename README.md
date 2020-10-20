@@ -7,7 +7,7 @@ After you have a working SES noreply address, the basic site that is installed i
 
 2)  Configure DNS with A records for your domain, pointing at your new instance.
 
-    2A)  WAIT until the records have propagated.  Your Certbot certificate will fail if DNS fails.  Check at dnschecker.com
+    2A)  WAIT until the records have propagated.  Your Certbot certificate will fail if DNS fails.  Check at dnschecker.org
 
 3)  SSH into your new instance, and run the following:
 
