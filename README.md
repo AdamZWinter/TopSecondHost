@@ -7,9 +7,14 @@ After you have a working SES noreply address, the basic site that is installed i
 
 2)  Configure DNS with A records for your domain, pointing at your new instance.
 
-    2A)  WAIT until the records have propagated.  Your Certbot certificate will fail if DNS fails.  Check at dnschecker.org
+3)  WAIT until the records have propagated.  Your Certbot certificate will fail if DNS fails.  Check at dnschecker.org
 
-3)  SSH into your new instance, and run the following:
+  3A) While you're waiting:  Go to AWS SES (Simple Email Service) and verify your domain.
+  3B) While in SES, go to SMTP Settings and "Create My SMTP Creds".  Choose a name for the IAM role, recommended: "noreply@yourdomain.com"  
+      --Click "Download Creds" and save for later.
+  3C) Apply to take SES for your domain out of the sandbox.
+
+4)  SSH into your new instance, and run the following:
 
 $ sudo yum install git-all -y
 
@@ -47,8 +52,11 @@ Which names would you like to activate HTTPS for?
 Press enter to select both.
 
 
-When installation is finished, you should find the https site 
- 
+When installation is finished, you should find the https site in place.
+Go to /var/www/secrets/conf.php and configure SES Mailer username and password with the SMTP credentials you downloaded earlier.
+You will need SES configured in order to verify email addresses at user registrations.  
+To configure SES, you need the domain verified, the account removed from sandbox, and the SMTP creds in the conf.php file.
+
 
 You can run each section of the installation by manually executing the same commands in install.sh (in the same order).
 
