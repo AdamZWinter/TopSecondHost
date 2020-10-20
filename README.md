@@ -1,7 +1,7 @@
 # TopSecondHost  - Instructions
 
 This is an automation script to quickly get an AWS Linux AMI working and configured (with SSL) LAMP stack (php).
-After you have a working SES noreplay address, the basic site that is installed is ready for users to register and log in.
+After you have a working SES noreply address, the basic site that is installed is ready for users to register and log in.
 
 1)  Launch a new Amazon Linux AMI (not Linux 2), with ports 22, 80, and 443 open.  
 
