@@ -22,6 +22,9 @@ cd $workingdir
 source virtualhost.sh
 
 cd $workingdir
+source html.sh
+
+cd $workingdir
 source certbot.sh
 
 cd $workingdir
@@ -29,6 +32,8 @@ source composer.sh
 
 cd $workingdir
 source phpMyAdmin.sh
+
+
 
 #/var/www/secrets/conf.php may still need some configuring
 echo '/var/www/secrets/conf.php may still need some configuring'
