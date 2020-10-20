@@ -15,6 +15,9 @@ cd $workingdir
 source httpdconf.sh
 
 cd $workingdir
+source conf.sh
+
+cd $workingdir
 source mysql.sh
 
 php createtables.php
