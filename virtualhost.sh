@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source configure.sh
+
 sudo touch /etc/httpd/conf.d/${suffix}.conf
 
 sudo chown ec2-user /etc/httpd/conf.d/${suffix}.conf

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source configure.sh
 
 cd /var/www/html
 

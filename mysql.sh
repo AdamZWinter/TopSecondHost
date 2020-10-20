@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source configure.sh
+
 echo 'Starting mysql_secure_installation....'
 sudo mysql_secure_installation
 

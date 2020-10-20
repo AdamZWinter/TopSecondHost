@@ -3,9 +3,6 @@
 #as each of these steps are completed, 
 # you can simply delete the coresponding line from this 
 #  file to resume where there may have been an error
-#   Of course, leave configure.sh at the top
-
-source configure.sh
 
 cd $workingdir
 source dependencies.sh

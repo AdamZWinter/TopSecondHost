@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source configure.sh
+
 sudo chown ec2-user /etc/httpd/conf/httpd.conf
 
 sudo sed -i "s/#ServerName www.example.com:80/ServerName $suffix:443/g" /etc/httpd/conf/httpd.conf
