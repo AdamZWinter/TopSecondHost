@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '######################################## STARTING MYSQL.SH ###############################################################################'
+
 source configure.sh
 
 echo 'Starting mysql_secure_installation....'
@@ -24,3 +26,5 @@ sudo sed -i "s/replacethisuniquestringuserpw/${dbpw}/g" /var/www/secrets/conf.ph
 echo Enter the root password for mysql below....
 mysql -u root -p -e "CREATE USER '$dbuser'@'localhost' IDENTIFIED BY '$dbpw'; select User, Host, Password from mysql.user; CREATE DATABASE $database; SHOW DATABASES; GRANT SELECT, INSERT, UPDATE, DELETE, CREATE ON $database.* TO '$dbuser'@'localhost';"
 
+
+echo '############################### END MYSQL.SH ######################################################################################'

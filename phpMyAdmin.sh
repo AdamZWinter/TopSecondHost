@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '################################### starting phpMyAdmin.sh #########################################################'
+
 source configure.sh
 
 cd /var/www/html
@@ -13,3 +15,5 @@ rm phpMyAdmin-4.9.5-english.tar.gz
 
 cd $workingdir
 
+
+echo '############################################## end phpMyAdmin.sh ############################################################'

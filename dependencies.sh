@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '############################################# starting dependencies.sh ##################################################################'
+
 sudo yum update -y
         #sudo yum -y install epel-release
 sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
@@ -36,3 +38,6 @@ fi
 
 sudo ldconfig -v
 
+
+
+echo '################################################## end dependencies.sh ##############################################################'

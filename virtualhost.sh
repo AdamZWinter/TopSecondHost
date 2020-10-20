@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '################################################### starting virtualhost.sh ##########################################'
+
 source configure.sh
 
 sudo touch /etc/httpd/conf.d/${suffix}.conf
@@ -21,3 +23,5 @@ echo "
 
 sudo service httpd restart
 
+
+echo '##################################################### end virtualhost.sh ################################################'

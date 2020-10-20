@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '#####################################################  starting httpdconf.sh #############################################################'
+
 source configure.sh
 
 sudo chown ec2-user /etc/httpd/conf/httpd.conf
@@ -51,3 +53,5 @@ sudo chown root /etc/httpd/conf/httpd.conf
 
 sudo service httpd restart
 
+
+echo '#########################################################  end httpdconf.sh ################################################################'

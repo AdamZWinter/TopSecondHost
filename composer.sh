@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo '###################################################  Starting composer.sh ###########################################################'
+
 cd $workingdir
 sudo mkdir composer
 cd composer
@@ -22,3 +24,6 @@ exit $RESULT
 
 cd /var/www
 composer require phpmailer/phpmailer
+
+
+echo '##################################################### end composer.sh ################################################################'
