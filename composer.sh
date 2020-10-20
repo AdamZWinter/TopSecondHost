@@ -20,7 +20,7 @@ fi
 sudo php composer-setup.php --quiet --filename=composer --install-dir=/usr/local/bin
 RESULT=$?
 sudo rm composer-setup.php
-exit $RESULT
+echo $RESULT
 
 cd /var/www
 composer require phpmailer/phpmailer
