@@ -4,7 +4,8 @@
 # you can simply delete the coresponding line from this 
 #  file to resume where there may have been an error
 
-cd $workingdir
+source configure.sh
+
 source dependencies.sh
 
 cd $workingdir
