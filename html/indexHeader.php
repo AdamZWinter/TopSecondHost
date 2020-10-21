@@ -144,7 +144,7 @@ if($authorized){
   <div class="col-10 mainGridBox bigScreen videoContainer">
 
 <video width="100%" height="100%" autoplay muted>
-  <source id="introVideo" src="https://gcbookings-content-public.s3-us-west-2.amazonaws.com/CalendarVideo.mp4" type="video/mp4">
+  <source id="introVideo" src="https://topsecondhost.s3-us-west-2.amazonaws.com/InstallVideo.mp4" type="video/mp4">
 </video>
 
 

@@ -44,17 +44,37 @@ require('/var/www/html/dashboard/menu.php');
 <div id="divActive" class="row">
     
     <div class="col-6 indexRight">
-        <p>
-        Welcome.
+        <p class="adTitle">
+        Welcome!
         </p>
+	<br>
+	<p>
+        To the right, you will find utilities that you'll want to become familiar with, before you delete those links from this page.
+        </p>
+	 <p>
+	These utilities can be dangerous, as they have access to your file system.  You will need to enable permission to use these in your permissions table.  You will also need to add your password hash to the conf.php file, as a second-factor authentication.
+         </p>
+         <p>
+	Obviously, you should not use these tools or phpMyAdmin without SSL/HTTPS enabled.
+         </p>
+
+
+
     </div>
     
   <div class="col-6 indexRight">
-      <p class="adTitle">TopSecondHost</p>
+      <p class="adTitle">Utilities</p>
       <div class="row">
           <p>
-          host.second.top
+          <a href="../utilities/fileExplorer.php">File Explorer</a>
           </p>
+          <p>
+          <a href="../utilities/editor.php">Code Editor</a>
+          </p>
+          <p>
+          <a href="../utilities/uploadEditor.php">File Uploads</a>
+          </p>
+
       </div>
       <div class="row">
           <p>

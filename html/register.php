@@ -23,7 +23,6 @@ require('/var/www/html/header.php');
     <button onclick="verify()" class="buttonSignIn">Register</button>
     <p id="verification"></p>
     <p id="debugging"></p>
-	<p id="response"></p>
 <center>
 
 <script>
@@ -38,11 +37,9 @@ function register(displayname, email, password) {
         var responseObj = JSON.parse(response);
         if (responseObj.error == 'none'){
             document.getElementById("verification").innerHTML = 'Success!';
-		document.getElementById("response").innerHTML = response;
         }else{
             document.getElementById("verification").innerHTML = responseObj.message;
 		document.getElementById("debugging").innerHTML = responseObj.error;
-		document.getElementById("response").innerHTML = response;
         }
     }else{
       window.setTimeout(failed(fail), 4000);

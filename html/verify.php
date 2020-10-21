@@ -124,7 +124,7 @@ if(!$authorized){echo $return2Login; require('/var/www/html/footer.php'); exit;}
 ?>
 
     <script type="text/javascript">
-    window.location.replace("/signin.php");
+    window.location.replace("/dashboard/session.php");
     </script>
 
 

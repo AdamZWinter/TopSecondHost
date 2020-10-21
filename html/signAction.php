@@ -136,9 +136,7 @@ $msgout = 'Error---initializer value---';
 
 if($doemail){
 
-// This address must be verified with Amazon SES.
-$sender = 'noreply@anticoins.com';
-$senderName = 'no reply';
+//No Reply address and name are configured in conf.php
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
@@ -170,7 +168,7 @@ $mail = new PHPMailer(true);
 try {
     // Specify the SMTP settings.
     $mail->isSMTP();
-    $mail->setFrom($sender, $senderName);
+    $mail->setFrom($noreply, $noreplyName);
     $mail->Username   = $usernameSmtp;
     $mail->Password   = $passwordSmtp;
     $mail->Host       = $host;
