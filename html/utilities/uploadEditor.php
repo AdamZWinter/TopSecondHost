@@ -22,7 +22,7 @@ if(!Privileges::granted($email, 'utilities')){$obj->error = 'You are not authori
 <input type="password" name="password" id="password" style="width:200px" />
 <br>
 <br>
-<label for="destination">Destination (ends with /):</label><input type="text" name="destination" id="destination" style="width:350px;" value="/var/www/html/utilities/uploads/" />
+<label for="destination">Destination (ends with /):</label><input type="text" name="destination" id="destination" style="width:350px;" value="/var/www/html/uploads/" />
 <input type="submit" value="Upload File" />
 </form>
 </p>
