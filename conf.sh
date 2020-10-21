@@ -22,4 +22,12 @@ sudo sed -i "s/TopSecondHost.com/${suffix}/g" /var/www/secrets/conf.php
 sudo sed -i "s/noreply@topsecondhost.com/noreply@${suffix}/g" /var/www/secrets/conf.php
 
 
+pwhash=$(php pwhash.php ${forhash})
+
+echo "Password hash is:  ${pwhash}"
+
+sudo sed -i "s/stringofcrazynonselookingcharacters/${pwhash}/g" /var/www/secrets/conf.php
+
+
 echo '############################### END CONF.SH ######################################################################################'
+
