@@ -1,9 +1,10 @@
+
 <?php
 //register.php
 require('/var/www/html/header.php');
 ?>
 
-
+<div id="regForm">
 <center>
     <!--form action="regAction.php" method="post"-->
   
@@ -24,6 +25,11 @@ require('/var/www/html/header.php');
     <p id="verification"></p>
     <p id="debugging"></p>
 <center>
+</div>
+
+<div id="success" style="display:none;">
+<p>A verification email has been sent.  Please, check your email and spam box.  Click on the link you find there to continue.  You can close this window.</p>
+</div>
 
 <script>
     
@@ -37,6 +43,8 @@ function register(displayname, email, password) {
         var responseObj = JSON.parse(response);
         if (responseObj.error == 'none'){
             document.getElementById("verification").innerHTML = 'Success!';
+	    document.getElementById("success").style.display = "inline";
+            document.getElementById("regForm").style.display = "none";
         }else{
             document.getElementById("verification").innerHTML = responseObj.message;
 		document.getElementById("debugging").innerHTML = responseObj.error;
@@ -113,4 +121,5 @@ function ValidateEmail(email)
 <?php
 require('/var/www/html/footer.php');
 ?>
+
 
