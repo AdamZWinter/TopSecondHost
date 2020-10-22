@@ -1,4 +1,3 @@
-
 <?php
 //register.php
 require('/var/www/html/header.php');
@@ -121,5 +120,4 @@ function ValidateEmail(email)
 <?php
 require('/var/www/html/footer.php');
 ?>
-
 
