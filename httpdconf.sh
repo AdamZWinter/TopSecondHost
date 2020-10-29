@@ -14,34 +14,7 @@ sudo sed -i 's/Options Indexes FollowSymLinks/Options FollowSymLinks/g' /etc/htt
 
 sudo sed -i '/<Directory "\/var\/www\/html">/a RewriteEngine on\nRewriteRule "^(\w+)$" "$1.php"' /etc/httpd/conf/httpd.conf
 
-echo '#This was added to work with the small amount of RAM this system has and keep from thrashing
-<IfModule prefork.c>
-    StartServers            1
-    MinSpareServers         1
-    MaxSpareServers         8
-    MaxConnectionsPerChild  8
-    MaxRequestWorkers       32
-</IfModule>
-
-<Directory "/var/www/html/test">
-    RewriteEngine on
-    RewriteRule "^(\w+)$" "$1.php"
-</Directory>
-
-<Directory "/var/www/html/dashboard">
-    RewriteEngine on
-    RewriteRule "^(\w+)$" "$1.php"
-</Directory>
-
-<Directory "/var/www/html/dashboard/wizard">
-    RewriteEngine on
-    RewriteRule "^(\w+)$" "$1.php"
-</Directory>
-
-<FilesMatch "\.(php|html|htm)$">
-   SetHandler application/x-httpd-php
-</FilesMatch>
-'  >> /etc/httpd/conf/httpd.conf
+cat httpd.conf >> /etc/httpd/conf/httpd.conf
 
 #ADD FilesMatch to not serve your secrets / configuration files
 
