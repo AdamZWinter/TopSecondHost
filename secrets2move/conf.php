@@ -5,11 +5,20 @@
 //Some parts of this site, like email verification, will link to https://example.com
 $webRoot = 'https://orange.topsecondhost.com';
 
-//For Databasei
-$dbserver='mariadb';
-$database='******replace******';
-$dbuser='*******replace******'; 
-$userpw='*******replace********';
+//For Database
+class databaseConfig {
+
+    private String $dbserver='mariadb';
+    private String $database='*******replace************';
+    private String $dbuser='*******replace************'; 
+    private String $userpw='*******replace************';
+
+    public function getServer(){return $this->dbserver;}
+    public function getDatabase(){return $this->database;}
+    public function getUser(){return $this->dbuser;}
+    public function getPassword(){return $this->userpw;}
+}
+
 
  
 //Custom Error Logging file 
@@ -32,13 +41,13 @@ $sitename='Walnut Ridge Wedding Signs';
 //To use utilities (editor.php & uploadEditor.php) you must enter the password on that page that hashes to this value
 //To configure this value, copy the pwhash value from the users table of the database
 //OR see /var/www/html/users/pwhash.php for the hash used for all passwords on the site  
-$pw='g0MGU1MGNkjJkODYzMzU4NDY0N2E4ZWJlODQ5OGQzOTc3NmYjViZDk3OGU2NFhZT';
+$pw='g0MGU1MGNkYjViZDk3OGU2NjJkODYzMzU4NDY0N2E4ZWJlODQ5OGQzOTc3NmFhZT';
 
 //__________FOR SENDING EMAILS WITH SES_______________________________________
 
 //For PHP Mailer Class 
 $usernameSmtp = 'noreply'; 
-$passwordSmtp = 'GXJGhjxvYAawlS9FpKh2NZFlWGHKgk'; 
+$passwordSmtp = '*******replace************'; 
 
 
 // Replace sender@example.com with your NoReply "From" address.
