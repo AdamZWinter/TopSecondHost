@@ -7,9 +7,9 @@ $webRoot = 'https://orange.topsecondhost.com';
 
 //For Databasei
 $dbserver='mariadb';
-$database='orangegr_walnut';
-$dbuser='orangegr_orangegr'; 
-$userpw='GhjxvYFGKh2NXJGlHKgkZFp';
+$database='******replace******';
+$dbuser='*******replace******'; 
+$userpw='*******replace********';
 
  
 //Custom Error Logging file 
@@ -32,13 +32,13 @@ $sitename='Walnut Ridge Wedding Signs';
 //To use utilities (editor.php & uploadEditor.php) you must enter the password on that page that hashes to this value
 //To configure this value, copy the pwhash value from the users table of the database
 //OR see /var/www/html/users/pwhash.php for the hash used for all passwords on the site  
-$pw='g0MGU1MGNkYjViZDk3OGU2NjJkODYzMzU4NDY0N2E4ZWJlODQ5OGQzOTc3NmFhZT';
+$pw='g0MGU1MGNkjJkODYzMzU4NDY0N2E4ZWJlODQ5OGQzOTc3NmYjViZDk3OGU2NFhZT';
 
 //__________FOR SENDING EMAILS WITH SES_______________________________________
 
 //For PHP Mailer Class 
 $usernameSmtp = 'noreply'; 
-$passwordSmtp = 'GXJGGHKgkhjxvYAawlS9FpKh2NZFlW'; 
+$passwordSmtp = 'GXJGhjxvYAawlS9FpKh2NZFlWGHKgk'; 
 
 
 // Replace sender@example.com with your NoReply "From" address.
