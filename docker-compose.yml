@@ -2,7 +2,7 @@ version: "3"
 
 services:
   webserver:
-    image: "webserver:0.01"
+    image: "webserver:0.02"
     restart: unless-stopped
     depends_on:
       - mariadb
@@ -12,7 +12,7 @@ services:
       - mariadb
     volumes:
       - ../html:/var/www/html:z
-      - ./secrets:/var/www/secrets:z
+      - ../secrets:/var/www/secrets:z
       - ./scripts:/var/www/scripts:z
       - ./logs:/var/www/logs:z
   mariadb:
@@ -21,7 +21,7 @@ services:
     volumes: 
       - database-volume:/var/lib/mysql
     env_file:
-      - ./secrets/variables.env
+      - ../secrets/variables.env
     ports:
       - '3306:3306'
   phpmyadmin:
